@@ -1,0 +1,17 @@
+package powerJavaLearning;
+
+public class FindSumOfNumbersApproachASCII {
+
+	public static void main(String[] args) {
+		String input ="asdf1qwer9as8d7";
+		char[] array = input.toCharArray();
+		int sum=0;
+		for (int i = 0; i < array.length; i++) {
+			if((int)array[i]>=48 && (int)array[i]<=57) {
+				sum+=Character.getNumericValue(array[i]);
+			}
+			System.out.println("integer " +Character.getNumericValue(array[i]));
+		}
+		System.out.println("Sum of Integers "+ sum);
+	}
+}
