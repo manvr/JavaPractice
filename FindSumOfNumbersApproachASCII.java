@@ -1,6 +1,6 @@
 package powerJavaLearning;
 
-/*Write a java code to find the sum of the given numbers 
+/*Write a java code to find the sum of the given numbers in a string
 Input: "asdf1qwer9as8d7" 
 output: 1+9+8+7 = 25 */
 
