@@ -7,18 +7,6 @@ public class FindSumOfNumbersApproachRegex {
 	public static void main(String[] args) {
 		String input ="asdf1qwer9as8d7";
 
-		//using charArray operation
-		System.out.println("logic using characterArray operation");
-		String numberFromString = input.replaceAll("\\D", "");
-		int sumAp1=0;
-		char[] charArray = numberFromString.toCharArray();
-		for (int i = 0; i < numberFromString.length(); i++) {
-			char charAt = charArray[i];
-			sumAp1 += Integer.parseInt(String.valueOf(charAt)); 
-		}
-		System.out.println("Sum of Integers "+sumAp1);
-
-
 		//using mathematical operation
 		System.out.println("logic using mathematical operation");
 		int number=Integer.parseInt(input.replaceAll("[^0-9]", ""));
