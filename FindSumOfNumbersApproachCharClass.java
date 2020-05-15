@@ -7,16 +7,15 @@ public class FindSumOfNumbersApproachCharClass {
 	public static void main(String[] args) {
 		String input ="asdf1qwer9as8d7";
 
-		//using charArray operation
+		//using Character class  operation
 		System.out.println("logic using Character class");
-		String numberFromString = input.replaceAll("\\D", "");
-		int sumAp1=0;
-		char[] charArray = numberFromString.toCharArray();
-		for (int i = 0; i < numberFromString.length(); i++) {
-			char charAt = charArray[i];
-			sumAp1 += Integer.parseInt(String.valueOf(charAt)); 
+		int sum=0;
+		for (int i = 0; i < input.length(); i++) {
+			if (Character.isDigit(input.charAt(i))) {
+				sum += Integer.parseInt(String.valueOf(input.charAt(i)))
+			} 
 		}
-		System.out.println("Sum of Integers "+sumAp1);
+		System.out.println("Sum of Integers "+sum);
 		
 	}
 }
