@@ -12,7 +12,7 @@ public class FindSumOfNumbersApproachCharClass {
 		int sum=0;
 		for (int i = 0; i < input.length(); i++) {
 			if (Character.isDigit(input.charAt(i))) {
-				sum += Integer.parseInt(String.valueOf(input.charAt(i)))
+				sum += Integer.parseInt(String.valueOf(input.charAt(i)));
 			} 
 		}
 		System.out.println("Sum of Integers "+sum);
